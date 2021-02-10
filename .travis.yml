@@ -3,16 +3,14 @@ language: julia
 notifications:
   email: false
 julia:
-  - 1.0
+  - 1.4.2
+  - 1.5.3
   - 1.6
   - nightly
 os:
   - linux
   - osx
   - windows
-arch:
-  - x64
-  - x86
 cache:
   directories:
     - ~/.julia/artifacts
@@ -21,7 +19,7 @@ jobs:
   allow_failures:
     - julia: nightly
   exclude:
-    - arch: x86
+    - arch: amd64
       os: osx
   include:
     - stage: Documentation
