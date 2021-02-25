@@ -1,3 +1,6 @@
+abstract type AbstractBackend end
+abstract type AbstrsctModule end
+
 abstract type IOBackend <: AbstractBackend end
 abstract type ColorBackend <: AbstractBackend end
 abstract type CursorBackend <: AbstractBackend end
